@@ -1,0 +1,132 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger" style="background: linear-gradient(60deg, #2d3849eb, #2d3849a8) !important;">
+                        <h4 class="card-title">Layout Graph</h4>
+                        <p class="card-category">Your Graph</p>
+                    </div>
+                    <div class="card-body">
+                        <!-- <form> -->
+                            <!-- <div class="row">
+                                <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Company (disabled)" disabled>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Username">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Email address" type="email">
+                                    </mat-form-field>
+                                </div>
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Fist Name" type="text">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Last Name" type="text">
+                                  </mat-form-field>
+                                </div>
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Adress" type="text">
+                                  </mat-form-field>
+                                </div>
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="City" type="text">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Country" type="text">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Postal Code" type="text">
+                                  </mat-form-field>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select style="width:100%;" [(ngModel)]="country" class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle">
+                                            <option style="font-size: small;"   [ngValue]="selected" selected> Select Country </option>
+                                            <option style="font-size: small;"  *ngFor="let country of countries" [value]="country"> {{ country }} </option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select   style="width:100%;" class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle" *ngIf="country" [(ngModel)]="city" [value]="city">
+                                            <option style="font-size: small;"  [ngValue]="selected" selected> Select State </option>
+                                            <option style="font-size: small;"  *ngFor="let city of cities"> {{ city }} </option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select   style="width:100%;"  class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle" *ngIf="city" [(ngModel)]="area" [value]="area">
+                                            <option style="font-size: small;"  [ngValue]="selected" selected> Select City </option>
+                                            <option style="font-size: small;"  *ngFor="let area of areas"> {{ area }} </option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button mat-raised-button type="submit" (click)="toggle()" class="btn btn-danger pull-right col-8"  style="background: linear-gradient(60deg, #2d3849eb, #2d3849a8) !important;" >Search</button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <ng-container *ngIf="show">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <iframe src="https://aspectum.com/app/maps/shared/7f0c1803-4cc1-4019-8564-769d8b99b160?theme=dark" height="700" width="100%" title="Iframe Example"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+                            <div class="clearfix"></div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="javascript:void(0)">
+                            <img class="img" src="./assets/img/faces/marc.jpg" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                        <h4 class="card-title">Alec Thompson</h4>
+                        <p class="card-description">
+                            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                        </p>
+                        <a href="javascript:void(0)" class="btn btn-danger btn-round">Follow</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+  </div>
+  
