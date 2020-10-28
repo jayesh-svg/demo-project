@@ -63,7 +63,7 @@
                                 </div>
                             </div> -->
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <select style="width:100%;" [(ngModel)]="country" class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle">
                                             <option style="font-size: small;"   [ngValue]="selected" selected> Select Country </option>
@@ -71,7 +71,7 @@
                                           </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <select   style="width:100%;" class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle" *ngIf="country" [(ngModel)]="city" [value]="city">
                                             <option style="font-size: small;"  [ngValue]="selected" selected> Select State </option>
@@ -79,14 +79,14 @@
                                           </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <!-- <div class="col-md-3">
                                     <div class="form-group">
                                         <select   style="width:100%;"  class="mb-2 mr-2 btn btn-outline-dark dropdown-toggle" *ngIf="city" [(ngModel)]="area" [value]="area">
                                             <option style="font-size: small;"  [ngValue]="selected" selected> Select City </option>
                                             <option style="font-size: small;"  *ngFor="let area of areas"> {{ area }} </option>
                                           </select>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <button mat-raised-button type="submit" (click)="toggle()" class="btn btn-danger pull-right col-8"  style="background:#1c2533 !important;" >Search</button>

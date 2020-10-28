@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// import {HttpClient} from '@angular/common/http';
 @Component({
   selector: 'app-user-profile',
   templateUrl: './layout-graph.component.html',
@@ -7,22 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraphLayoutComponent implements OnInit {
 
-  constructor() { }
+  // constructor(private http : HttpClient){
+  
+  // } 
 
+  constructor(){
+  
+  } 
   ngOnInit() {
   }
 
+
   private map = new Map<string, string[]>([
-    ['Poland', ['Warszawa', 'Krakow']],
-    ['USA', ['New York', 'Austin']],
-    ['India', ['Maharashtra', 'Chattisghar']],
+    ['UAE', ['Sarjah', 'Abu Dhabi']],
+    ['OMAN', ['Muscat', 'Salalah']],
+    ['KUWAIT', ['Ḩawallī', 'Al Ahmadi']],
+    ['SAUDI AREBIA', ['Riyadh', 'Jeddah']],
+    ['BEHRAIN', ['Manama', 'Muharraq']],
+    ['QATAR', ['Doha', 'Al Wakrah']],
   ])
 
-  private map1 = new Map<string, string[]>([
-    ['Maharashtra', ['Pune', 'Nagpur']],
-    ['Chattisghar', ['Durg', 'Raipur']],
+  // private map1 = new Map<string, string[]>([
+  //   ['Maharashtra', ['Pune', 'Nagpur']],
+  //   ['Chattisghar', ['Durg', 'Raipur']],
    
-  ])
+  // ])
   country: string;
   city: string;
   area: string;
@@ -36,9 +45,9 @@ export class GraphLayoutComponent implements OnInit {
   get cities(): string[] | undefined {
     return this.map.get(this.country);
   }
-  get areas(): string[] | undefined {
-    return this.map1.get(this.city);
-  }
+  // get areas(): string[] | undefined {
+  //   return this.map1.get(this.city);
+  // }
 
   toggle() {
     this.show = !this.show;
